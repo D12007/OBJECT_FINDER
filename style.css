@@ -1,0 +1,122 @@
+.btn {
+    height: 40px;
+    border: white 0.5px solid;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-family: 'Anton', sans-serif;
+    margin:5px;
+    font-size:19px;
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
+p{
+    font-size:15px;!important
+}
+
+button {
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+#btn-1:hover {
+    background: #45fafa;
+    color:white;
+    box-shadow: 0 0 5px #45fafa, 0 0 25px #45fafa, 0 0 50px #45fafa, 0 0 200px #45fafa;
+}
+    .heading
+{
+font-size: 23px;
+width: 100%;
+margin-bottom: 30px;
+}
+#btn-2:hover {
+    background: #fa8745;
+    color:white;
+    box-shadow: 0 0 5px #fa8745, 0 0 25px #fa8745, 0 0 50px #fa8745, 0 0 200px #fa8745;
+}
+#btn-3:hover {
+    color:white;
+    box-shadow: inset -10.5em 0 0 0 #fc1849, inset 10.5em 0 0 0 #fc1849;
+}
+ 
+#btn-9 {
+    height: 70px;
+    margin:10px;
+    width: 90%;
+    background-color: #2a2b30 ;
+    color:white;
+    position: relative;
+    border-radius: 10px;
+    user-select: none;
+    touch-action: manipulation;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#btn-9:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-btn-9 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-btn-9 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#btn-9:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+canvas{
+    border:5px solid blue;
+    margin-top: 170px;
+}
